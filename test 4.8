@@ -1,0 +1,79 @@
+#include <stdio.h>
+int cut = 2019;
+void test()
+{
+	printf("test()--%d\n", cut);
+}
+int main()
+{
+	test();
+	printf("num = %d\n", cut);     //全局变量作用域
+	return 0;
+}
+
+
+int gg = 15;
+int main()
+{
+printf("gg= %d\n", gg); //全局变量作用域
+return 0;
+}
+
+
+
+int main()
+{
+	int cut = 5;
+	printf("num = %d\n", cut);
+	return 0;
+}
+
+
+
+int main()
+{
+	{
+		int cut = 5;
+	}
+	printf("num = %d\n", cut);   //不能编译成功，局部变量只在局部的{}内有用
+	return 0;
+}
+
+
+
+
+
+int main()
+{
+	//局部变量的作用域
+	int cut = 5;
+	{
+		printf("num = %d\n", cut);
+	}
+	return 0;
+}
+
+int main()
+{
+	//未声明的标识符
+	//声明extern外部符号的
+	extern int t_t;
+	printf("t_t = %d\n", t_t);
+	return 0;
+}
+
+
+
+int main()
+{
+	{ 
+		int g = 10;
+	    printf("g = %d\n", g); //ok
+	}
+	printf("g = %d\n", g);//error      //局部变量声明周期
+  return 0;
+}
+
+
+
+
