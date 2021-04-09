@@ -1,0 +1,41 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+//#include <srting.h>
+//int main()
+//{
+//
+//	//字符串的结束标志:'\0'
+//	//"abcdef";
+//	//'\0'-转义字符—ASCII码值为0
+//	// 0-数字0
+//	//'0' -> 48
+//	//'a' 'b' 'c' '0' '1' '2'
+//	//EOF-end of file-文件结束标志
+//
+//	return 0;
+//}
+//int main()
+//{
+//	printf("%d\n", stelen("c:\test\121"));
+//	return 0;
+//
+//
+//}  
+// int Max(int a, int b) //函数求两个函数最大值
+//{
+//	if (a > b)
+//		return a;
+//	else
+//		return b;
+//}
+//
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	int max = 0;
+//	max = Max(a, b);
+//	printf("%d\n", max);
+//
+//	return 0;
+//}
